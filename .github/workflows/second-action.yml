@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Get commit message
-        run: echo "Latest commit message = ${{github.event.head_commit.message}}"
+        run: echo "Latest commit message = ${{github.event.head_commit.message}} "
