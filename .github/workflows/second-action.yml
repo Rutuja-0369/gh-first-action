@@ -9,3 +9,6 @@ jobs:
     steps: 
       - name: Get commit message
         run: echo "Latest commit message = ${{github.event.head_commit.message}} "
+  job-details:
+    runs-on: ubuntu-latest
+    steps: echo "${{toJSON(runner.os)}}"
