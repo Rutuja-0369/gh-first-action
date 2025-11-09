@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dump runner context
-        run: echo "Runner context - ${{ toJSON(runner.os) }}"
+        run: echo "Runner context - ${{ toJSON(runner) }}"
