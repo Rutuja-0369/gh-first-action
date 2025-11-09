@@ -11,4 +11,6 @@ jobs:
         run: echo "Latest commit message = ${{github.event.head_commit.message}} "
   job-details:
     runs-on: ubuntu-latest
-    steps: echo "${{toJSON(runner)}}"
+    steps:
+      - name: Dump runner context
+        run: echo "Runner context - ${{ toJSON(runner.os) }}"
